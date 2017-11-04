@@ -26,7 +26,7 @@ var model = {
         }
 
         if (proposal.deletedTodo) {
-            var filteredTodos = this.filterById(proposal.deletedTodo);
+            var filteredTodos = this.rejectById(proposal.deletedTodo);
 
             this.todos = this.populateTodos(filteredTodos);
         }
@@ -80,7 +80,7 @@ var model = {
         return !this.isDone(todo);
     },
 
-    filterById(id) {
+    rejectById(id) {
         var currentTodos = this.getTodos();
 
         return currentTodos.filter((todo) => {
