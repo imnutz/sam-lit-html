@@ -2,6 +2,7 @@
 
 An implementation of TodoMVC using [SAM Pattern](http://sam.js.org/) + [lit-html](https://github.com/PolymerLabs/lit-html)
 
+[Demo](https://sonngoc.me/todo)
 ## How to run
 - Clone the repo
 - `npm install`
